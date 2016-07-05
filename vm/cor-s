@@ -1,0 +1,11 @@
+#!/bin/sh
+
+let "i=1"
+
+while [ 1 ]
+do
+echo $i
+./corewar -d $i ../chp/lld.cor ../goinfre/champions/examples/zork.cor ../goinfre/champions/examples/helltrain.cor
+read -p "test"
+((i++))
+done
